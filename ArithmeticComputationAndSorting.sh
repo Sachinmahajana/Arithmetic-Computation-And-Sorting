@@ -26,4 +26,7 @@ echo "${array[@]}"
 echo "The computation expressions result in Descending"
 sortedDesc=($(echo ${array[@]}| tr " " "\n" | sort -nr))
 echo ${sortedDesc[@]}
+echo "The computation expressions result in ascending"
+sortedAsc=($(echo ${array[@]}| tr " " "\n" | sort -n))
+echo ${sortedAsc[@]}
 
