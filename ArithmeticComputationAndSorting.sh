@@ -22,4 +22,8 @@ do
 done
 #TO PRINT
 echo "${array[@]}"
+echo "${array[@]}"
+echo "The computation expressions result in Descending"
+sortedDesc=($(echo ${array[@]}| tr " " "\n" | sort -nr))
+echo ${sortedDesc[@]}
 
